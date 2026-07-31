@@ -3,8 +3,8 @@ import cv2
 import numpy as np
 import pandas as pd
 
-st.set_page_config(page_title="线虫红色占比分析工具", layout="wide")
-st.title("🧬 线虫红色区域面积占比智能分析系统")
+st.set_page_config(page_title="线虫脂肪含量分析工具", layout="wide")
+st.title("🧬 线虫脂肪含量智能分析")
 st.write("请在下方的按钮处上传一张或多张显微图片，系统将自动分析并给出红色区域的面积占比。")
 
 # 1. 侧边栏参数设置
