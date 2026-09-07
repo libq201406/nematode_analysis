@@ -75,7 +75,7 @@ if uploaded_files:
         })
 
         with col1:
-            st.image(vis_img_rgb, caption=f"处理结果: {uploaded_file.name}", use_column_width=True)
+            st.image(vis_img_rgb, caption=f"处理结果: {uploaded_file.name}")
 
         with col2:
             st.write(f"**📊 {uploaded_file.name}**")
