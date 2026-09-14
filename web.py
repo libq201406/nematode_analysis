@@ -47,7 +47,7 @@ if 'last_uploaded_file' not in st.session_state:
 
 # ================== 页面顶部布局 ==================
 try:
-    st.image("banner.png", use_column_width=True)
+    st.image("https://raw.githubusercontent.com/libq201406/nematode_analysis/main/banner.png", use_column_width=True)
 except:
     st.warning("⚠️ 找不到 banner.png 文件。")
 
