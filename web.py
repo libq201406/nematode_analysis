@@ -114,7 +114,7 @@ if uploaded_files and st.session_state['analyze_clicked']:
                     "红色面积(像素)": pixels_red, "红色占比(%)": f"{ratio:.2f}%"
                 })
 
-                st.image(vis_img_rgb, caption=f"处理结果: {uploaded_file.name}", use_column_width=True)
+                st.image(vis_img_rgb, caption=f"处理结果: {uploaded_file.name}")
                 st.metric(label=f"{uploaded_file.name} - 红色占比", value=f"{ratio:.2f}%")
 
         if results_data:
