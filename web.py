@@ -2,6 +2,10 @@ import streamlit as st
 import cv2
 import numpy as np
 import pandas as pd
+import base64
+# 读取本地图片并编码成文本
+with open("banner.png", "rb") as f:
+    banner_base64 = base64.b64encode(f.read()).decode()
 
 st.set_page_config(page_title="线虫脂肪含量智能分析", layout="wide")
 
@@ -47,7 +51,7 @@ if 'last_uploaded_file' not in st.session_state:
 
 # ================== 页面顶部布局 ==================
 try:
-    st.image("https://raw.githubusercontent.com/libq201406/nematode_analysis/main/banner.png", use_column_width=True)
+    st.image(f"data:image/png;base64,{banner_base64}", use_column_width=True)
 except:
     st.warning("⚠️ 找不到 banner.png 文件。")
 
