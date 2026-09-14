@@ -49,7 +49,7 @@ if 'last_uploaded_file' not in st.session_state:
 try:
     st.image("banner.png", use_column_width=True)
 except:
-    st.warning("⚠️ 找不到 banner.png 文件，请确保它已放入 113ORO 文件夹中。")
+    st.warning("⚠️ 找不到 banner.png 文件。")
 
 st.markdown("---")
 
